@@ -479,45 +479,146 @@ body{
     color: #0050B3;
     text-decoration: none;
 }
-.stats{
+.fanpage{
     margin-top: 16px;
     margin-left: 24px;
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 16px;
-    padding-left: 24px;
-    display: flex;
-    align-items: center;
+    border-radius: 4px; 
 }
-.stats-header{
+.fanpage-container{
+    padding: 0 16px;
+}
+.fanpage-header{
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 9px;
 }
-.stats-header::after{
-   
-
-}
-.stats-line{
-    display: block;
-}
-.stats-line::before{
+.fanpage-header::after{
     content: "";
     width: 100%;
     height: 1px;
     background: #E8E8E8;
     margin-top: 8px;
     margin-bottom: 16px;
-    display: flex;
+
 }
-.stats-header-text{
+.fanpage-header-text{
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
     color: #595959;
+    margin-left: 16px;
+}
+.fanpage-options-icon{
+    margin-right: 16px;
+}
+.fanpage-stats{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.fanpage-image{
+    border: 1px solid #D9D9D9;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.fanpage-stats-header{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0050B3;
+    margin-bottom: 4px;
+}
+.fanpage-stats-message, .fanpage-stats-notifications{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+    display: flex;
+    align-items: center;
+}
+.fanpage-stats-icon{
+    margin-right: 4px;
+}
+.notifications-count-box{
+    background: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+.notifications-count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+}
+.fanpage-stats::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #E8E8E8;
+    margin-top: 8px;
+}
+.fanpage-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 352px;
+    padding: 16px;
+}
+.fanpage-button:first-child{
+    border-radius: 4px 0 0 4px;
+}
+.fanpage-button:last-child{
+    border-radius:  0 4px 4px 0;
+}
+.fanpage-button{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+    width: 100%;
+    height: 40px;
+}
+.fanpage-button-active{
+    border-radius: 4px 0 0 4px;
+    display: block;
+    background: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1890FF;
+    border: 1px solid #1890FF;
+    width: 100%;
+    height: 40px;
+}
+.fanpage-likes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+.likes-count{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #262626;
+}
+.likes-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
 }
 @media(max-width: 1250px){
     .container{
