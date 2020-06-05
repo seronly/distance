@@ -167,7 +167,7 @@ body{
     margin: 12px 0 0;
 }
 .main-feed{
-    margin-top: 18px;
+    margin-top: 16px;
     max-width: 588px;
     flex-grow: 1;
 }
@@ -335,4 +335,102 @@ body{
     height: 1px;
     background: #E8E8E8;
     margin-bottom: 16px;
+}
+.right-sidebar{
+    width: 384px;
+}
+.stories{
+    margin-top: 16px;
+    margin-left: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px;
+    padding-left: 24px;
+}
+.story-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.stories-title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    margin: 0;
+}
+.stories-icon{
+    fill: #0050B3;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.story-buttons{
+    display: flex;
+}
+
+.story-button-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0050B3;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+.story-button-link:first-child::after{
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.story-item-add, .story-item{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+.story-image{
+    background: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #1890FF;
+    margin-right: 12px;
+}
+.story-title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #0050B3;
+}
+.story-text{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+    width: 100%;
+    word-wrap: break-word;
+}
+.figma{
+    background-image: url(../img/figma.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
